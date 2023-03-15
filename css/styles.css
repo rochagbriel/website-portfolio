@@ -1,0 +1,250 @@
+
+:root {
+  --primary-color: #357b70;
+  --primary-color-light: #489c79;
+  --secondary-color: #e0b354;
+  --dark-grey: #62696a;
+  --light-gray: #f6f6f6;
+  --font-s: 16px;
+  --font-m: 18px;
+  --font-l: 24px;
+  --font-xl: 30px;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --sun-color-day: #edc655;
+  --sun-color-afternoon: #f76414;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-s);
+    line-height: 1.6;
+    min-width: 320px;
+  }
+
+  main {
+    padding: 16px;
+  }
+  
+  h1 {
+    font-size: var(--font-xl);
+    font-weight: var(--font-weight-bold);
+  }
+  
+  h2 {
+    font-size: var(--font-l);
+    font-weight: var(--font-weight-bold);
+  }
+  
+  h3 {
+    font-size: var(--font-m);
+    font-weight: var(--font-weight-bold);
+  }
+
+  a {
+    color: var(--primary-color);
+    transition: 0.5s opacity;
+  }
+  
+  a:hover, a:focus {
+    /* No underlining when hovering over a link */
+    text-decoration: none;
+    opacity: 0.6;
+  }
+  
+  a:active {
+    /* selected link */
+    color: var(--primary-color-light);
+  }
+
+  .button, button {
+    /* overwrites browser defaults */
+    /* resets the border */
+    border: none;
+    display: inline-block;
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* style button */
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    /* width of the border, type, color */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    transition: 0.2s opacity;
+  }
+  
+  button:hover,
+  button:focus,
+  .button:hover,
+  .button:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+  }
+  
+  .navigation-list__item--active {
+    text-decoration: none;
+  }
+
+  .profile__portrait {
+    float: left;
+    width: 250px;
+    margin-right: 40px;
+    border-radius: 50%;
+  }
+
+  .profile {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .page-footer {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .page-header {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid var(--light-gray);
+  }
+
+  .page-header__item {
+    flex: 0 1 200px;
+  }
+
+  .page-header__item:last-child {
+    flex-grow: 1;
+    text-align: right;
+  }
+
+  .navigation-list, .about-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .navigation-list li {
+    display: inline-block;
+    margin-left: 15px;
+  }
+
+  .project-list {                       /* .grid */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 8px;
+  }
+
+  .project-list__item {                 /* .grid__item */
+    background-color: var(--light-gray);
+    padding: 8px;
+    border-radius: 10px;
+  }
+
+  .main-works {
+    box-sizing: content-box;            /* To look better(Grid layout)  */
+  }
+
+  .main-about, .main-works, .main-contact {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .about-table {
+    padding-top: 10px;
+    margin: 0 auto;
+  }
+
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media all and (max-width: 500px) {
+    .project-list {
+      grid-template-columns: 1fr;
+    }
+    .page-header {
+      border: none;
+    }
+  }
+  @media all and (min-width: 500px) and (max-width: 750px){
+    .project-list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media all and (max-width: 750px) {
+    .project-list {
+      grid-gap: 10px;
+    }
+    .project-list__item:last-child {
+      grid-column: auto / auto;
+      grid-row: auto / auto;
+    }
+    h1 {
+      font-size: 22px;
+    }
+    .page-header__item {
+      max-height: 70px;
+    }
+    .page-header {
+      padding: 15px;
+    }
+  }
+
+  /* Animations */
+
+  @keyframes color-change {
+    from {
+      fill: var(--sun-color-day);
+    }
+    to {
+      fill: var(--sun-color-afternoon);
+    }
+  }
+
+  .sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+
+  @keyframes cloud-move {
+    from {
+      transform: translate(0, 50px);
+    }
+    to {
+      transform: translate(200px, 50px);
+    }
+  }
+
+  .cloud-front {
+    animation: 30s cloud-move infinite alternate linear;          /* short way */
+  }
+
+  @keyframes cloud-move-reverse {
+    from {
+      transform: translate(446px, 48px);
+    }
+    to {
+      transform: translate(100px, 48px);
+    }
+  }
+
+  .cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear; /* short way */
+  }
