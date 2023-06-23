@@ -140,15 +140,24 @@ body {
   }
 
   .project-list {                       /* .grid */
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 8px;
+    list-style: none;
+  }
+
+  .project-list__item ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .project-list__item img {
+    width: 100%;
+    border-radius: 10px;
   }
 
   .project-list__item {                 /* .grid__item */
     background-color: var(--light-gray);
     padding: 8px;
     border-radius: 10px;
+    margin: 5%;
   }
 
   .main-works {

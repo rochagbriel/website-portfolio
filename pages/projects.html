@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coded by Gabriel Rocha</title>
+    <link rel="shortcut icon" href="../img/favicon-32x32.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- <link rel="stylesheet" href="../css/style.production.css"> -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+  <!-- Header including the logo and the main navigation -->
+    <header class="page-header">   
+        <img src="../img/gabriel_dev_logo_site.png" alt="logo" class="page-header__item">
+        <nav class="main-navigation page-header__item">
+            <ul role="menubar" class="navigation-list">
+                <li role="presentation">
+                <a href="../index.html" role="menuitem" class="navigation-list__item">Home</a>
+                </li>
+                <li role="presentation">
+                <a href="about.html" role="menuitem" class="navigation-list__item">About me</a>
+                </li>
+                <li role="presentation">
+                    <a href="projects.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Projects</a>
+                </li>
+                <li role="presentation">
+                <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+                </li>
+            </ul>
+            </nav>
+    </header>
+
+    <!-- Main content -->
+    <main class="main-works">
+        <section>
+            <h1 class="title">Projects</h1>
+
+            <div class="project-list__item">
+
+                <h2 id="Meet_App">Meet App - PWA</h2>
+                <p>
+                    A serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events.
+                </p>
+                <h3>Technologies Used</h3>
+                <p>
+                    This PWA(Progressive Web Application) was built using TDD(Test-Driven Development) process with JavaScript, CSS, React, AWS Lambda, Jest, Cucumber, Puppeteer, OAuth2, GoogleApi, Enzyme, React Scripts, Recharts and npm.
+                </p>
+                <h3>Features</h3>
+                <ul>
+                    <li>Filter events by city.</li>
+                    <li>Show/hide event details.</li>
+                    <li>Specify number of events.</li>
+                    <li>Use the app when offline.</li>
+                    <li>Add an app shortcut to the home screen.</li>
+                    <li>View a chart showing the number of upcoming events by city.</li>
+                </ul>
+                <h3>Screeshoots</h3>
+                <div class="project-list__item__img">
+                    <img src="../img/meet_home.png" alt="Meet App Home">
+                    <img src="../img/meet_main.png" alt="Meet App Main">
+                    <img src="../img/meet_mobile.png" alt="Meet App Mobile view">
+                </div>
+                <a href="https://rochagbriel.github.io/meet/" target="_blank">Site</a><br>
+                <a href="https://github.com/rochagbriel/meet" target="_blank">See project on GitHub</a>
+            </div>
+
+            <div class="project-list__item">
+
+                <h2 id="myFlix_SPA">myFlix SPA</h2>
+                <p>
+                    This is a Single Page App(SPA) made using React.js that will consume the API that I created, resulting in a responsive application designed for movie enthusiasts who enjoy reading information about different movies.
+                </p>
+                <h3>Technologies Used</h3>
+                <p>
+                    This SPA was built using HTML, SCSS, JavaScript, React, React-Bootstrap, Redux and my external API.
+                </p>
+                <h3>Features</h3>
+                <ul>
+                    <li>User-friendly interface with smooth navigation</li>
+                    <li>Ability to filter movies</li>
+                    <li>Ability to save favorite movies</li>
+                    <li>Ability to view information about movies, genres, and directors</li>
+                    <li>Ability to update user profile information</li>
+                </ul>
+                <h3>Screeshoots</h3>
+                <div class="project-list__item__img">
+                    <img src="../img/myflix_login.png" alt="My Flix Login">
+                    <img src="../img/myflix_signup.png" alt="My Flix Signup">
+                    <img src="../img/myflix_main.png" alt="My Flix Main">
+                    <img src="../img/myflix_movie.png" alt="My Flix Movie Details">
+                    <img src="../img/myflix_profile.png" alt="My Flix Profile">
+                </div>
+                <a href="https://myflix-grg.netlify.app/" target="_blank">Site</a><br>
+                <a href="https://github.com/rochagbriel/movie_client" target="_blank">See project on GitHub</a>
+            </div>
+
+            <div class="project-list__item">
+                <h2 id="myFlixApi">myFlix API</h2>
+                <p>
+                    This is a REST API, which allows registered users to browse movies, add and remove titles from their list of favorites, and update their personal data. The app is built using Node.js, Express.js, MongoDB, and Mongoose.
+                </p>
+                <h3>Technologies Used</h3>
+                <p>
+                    This API was built using Node.js, Express, MongoDb, Mongoose and ESLint.
+                </p>
+                <h3>Features</h3>
+                <ul>
+                    <li>Return a list of ALL movies to the user</li>
+                    <li>Return data (description, genre, director, image URL, whether it’s featured or not) about a single movie by title to the user</li>
+                    <li>Return data about a genre (description) by name/title (e.g., “Thriller”)</li>
+                    <li>Return data about a director (bio, birth year, death year) by name</li>
+                    <li>Allow new users to register</li>
+                </ul>
+                <a href="https://github.com/rochagbriel/movie_api" target="_blank">See project on GitHub</a>
+            </div>
+            
+            <div class="project-list__item">
+
+                <h2 id="PokeDex-Retro">PokeDex Retro</h2>
+                <p>
+                    A small web application with HTML, CSS, JavaScript and Bootstrap that loads data from an external API and allows you to view the data points in detail. It is a simulation of the Pokédex from the Pokémon cartoon.
+                </p>
+                <h3>Technologies Used</h3>
+                <p>
+                    This website was built using HTML, CSS, JavaScript, Bootstrap which uses an external API.
+                </p>
+                <h3>Features</h3>
+                <ul>
+                    <li>Load data from an external source (API)</li>
+                    <li>View a list of items</li>
+                    <li>On user action (e.g., by clicking on a list item), view details for that item</li>
+                </ul>
+                <h3>Screeshoots</h3>
+                <div class="project-list__item__img">
+                    <img src="../img/pokedex_retro.png" alt="PokeDex Retro">
+                    <img src="../img/pokedex_retro2.png" alt="PokeDex Retro 2">
+                </div>
+                <a href="https://rochagbriel.github.io/simple-js-app" target="_blank">Site</a><br>
+                <a href="https://github.com/rochagbriel/simple-js-app" target="_blank">See project on GitHub</a>
+            </div>
+
+            <h2 class="subtitle">Here are another projects I've worked on recently.</h2>
+
+            <div class="project-list">
+                <div class="project-list__item">
+                    <h2>Product Preview Card</h2>
+                    <p>
+                    This is a responsive product preview card demo that I created with HTML and CSS.
+                    </p>
+                    <a href="https://rochagbriel.github.io/product-preview-card/" target="_blank">See project on GitHub</a>
+                </div>
+                <div class="project-list__item">
+                    <h2>Interactive Component Review</h2>
+                    <p>
+                    I was responsible for the frontend for a Review page. It’s written in JavaScript. Additionally, I've created the HTML and CSS templates.
+                    </p>
+                    <a href="https://rochagbriel.github.io/interactive-component-review-FM/" target="_blank">See project on GitHub</a>
+                </div>
+                <div class="project-list__item">
+                    <h2>Order Summary</h2>
+                    <p>
+                    Within this project, I was responsible for the frontend. I've created the HTML and CSS.
+                    </p>
+                    <a href="https://rochagbriel.github.io/order-summary/" target="_blank">See project on GitHub</a>
+                </div>
+                <div class="project-list__item">
+                    <h2>QR Code Card</h2>
+                    <p>
+                        I developed a static webpage using HTML and CSS that displays a QR code. The page is designed to be responsive, which ensures that the QR code is displayed correctly on both mobile and desktop devices. 
+                    </p>
+                    <a href="https://rochagbriel.github.io/qrcode-FM/" target="_blank">See project on GitHub</a>
+                </div>
+                <div class="project-list__item">
+                    <h2>Habit Tracker(TypeScript)</h2>
+                    <p>
+                    I developed this project with the supervision and assistance of an experienced mentor. The project is a habit tracker web application inspired by the display of commits on Github. The frontend was built using TypeScript and React for the web, and React Native for mobile. The backend was built using Node.js.
+                    </p>
+                    <a href="https://github.com/rochagbriel/NLW23_SETUP_IGNITE" target="_blank">See project on GitHub</a>
+                </div>
+                <div class="project-list__item">
+                    <h2>ToDo List</h2>
+                    <p>
+                        I developed this simple TO-DO list to put into practice my recent knowledge about Vue.js, and I was supervised throughout the process.
+                    </p>
+                    <a href="https://rochagbriel.github.io/vuejs-simple-todoList/" target="_blank">See project on GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer with links to social media profiles -->
+    <footer class="page-footer">
+        <p>Find me on</p>
+        <div class="social-media">
+          <a href="https://github.com/rochagbriel" target="_blank"><img src="../img/1298743_github_git_logo_social_icon.svg" alt="Github"></a>
+          <a href="https://www.linkedin.com/in/gabrielrochagois" target="_blank"><img src="../img/317750_linkedin_icon.svg" alt="LinkedIn"></a>
+        </div>
+      </footer>
+<!-- <script src="/scripts/tota11y.min.js"></script> -->
+</body>
+</html>
